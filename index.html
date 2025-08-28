@@ -1,263 +1,185 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>W3.CSS Template</title>
-    <meta charset="UTF-8" />
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Roboto"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <style>
-      html,
-      body,
-      h1,
-      h2,
-      h3,
-      h4,
-      h5,
-      h6 {
-        font-family: "Roboto", sans-serif;
-      }
-    </style>
+    <meta name="color-scheme" content="dark" />
+    <meta name="description" content="Portfolio of a versatile software engineer: full‑stack, cloud, and UI engineering." />
+    <title>Versatile Software Engineer — Portfolio</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext x='50' y='62' font-size='64' text-anchor='middle'%3E%F0%9F%9A%80%3C/text%3E%3C/svg%3E" />
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body class="w3-light-grey">
-    <!-- Page Container -->
-    <div class="w3-content w3-margin-top" style="max-width: 1400px">
-      <!-- The Grid -->
-      <div class="w3-row-padding">
-        <!-- Left Column -->
-        <div class="w3-third">
-          <div class="w3-white w3-text-grey w3-card-4">
-            <div class="w3-display-container">
-              <img
-                src="/w3images/avatar_hat.jpg"
-                style="width: 100%"
-                alt="Avatar"
-              />
-              <div class="w3-display-bottomleft w3-container w3-text-black">
-                <h2>Jane Doe</h2>
-              </div>
-            </div>
-            <div class="w3-container">
-              <p>
-                <i
-                  class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"
-                ></i
-                >Designer
-              </p>
-              <p>
-                <i
-                  class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"
-                ></i
-                >London, UK
-              </p>
-              <p>
-                <i
-                  class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"
-                ></i
-                >ex@mail.com
-              </p>
-              <p>
-                <i
-                  class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"
-                ></i
-                >1224435534
-              </p>
-              <hr />
+  <body>
+    <canvas id="space" aria-hidden="true"></canvas>
+    <div class="cursor-blob" aria-hidden="true"><div class="dot" id="cursor-dot"></div></div>
 
-              <p class="w3-large">
-                <b
-                  ><i
-                    class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"
-                  ></i
-                  >Skills</b
-                >
-              </p>
-              <p>Adobe Photoshop</p>
-              <div class="w3-light-grey w3-round-xlarge w3-small">
-                <div
-                  class="w3-container w3-center w3-round-xlarge w3-teal"
-                  style="width: 90%"
-                >
-                  90%
-                </div>
-              </div>
-              <p>Photography</p>
-              <div class="w3-light-grey w3-round-xlarge w3-small">
-                <div
-                  class="w3-container w3-center w3-round-xlarge w3-teal"
-                  style="width: 80%"
-                >
-                  <div class="w3-center w3-text-white">80%</div>
-                </div>
-              </div>
-              <p>Illustrator</p>
-              <div class="w3-light-grey w3-round-xlarge w3-small">
-                <div
-                  class="w3-container w3-center w3-round-xlarge w3-teal"
-                  style="width: 75%"
-                >
-                  75%
-                </div>
-              </div>
-              <p>Media</p>
-              <div class="w3-light-grey w3-round-xlarge w3-small">
-                <div
-                  class="w3-container w3-center w3-round-xlarge w3-teal"
-                  style="width: 50%"
-                >
-                  50%
-                </div>
-              </div>
-              <br />
-
-              <p class="w3-large w3-text-theme">
-                <b
-                  ><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i
-                  >Languages</b
-                >
-              </p>
-              <p>English</p>
-              <div class="w3-light-grey w3-round-xlarge">
-                <div
-                  class="w3-round-xlarge w3-teal"
-                  style="height: 24px; width: 100%"
-                ></div>
-              </div>
-              <p>Spanish</p>
-              <div class="w3-light-grey w3-round-xlarge">
-                <div
-                  class="w3-round-xlarge w3-teal"
-                  style="height: 24px; width: 55%"
-                ></div>
-              </div>
-              <p>German</p>
-              <div class="w3-light-grey w3-round-xlarge">
-                <div
-                  class="w3-round-xlarge w3-teal"
-                  style="height: 24px; width: 25%"
-                ></div>
-              </div>
-              <br />
-            </div>
-          </div>
-          <br />
-
-          <!-- End Left Column -->
-        </div>
-
-        <!-- Right Column -->
-        <div class="w3-twothird">
-          <div class="w3-container w3-card w3-white w3-margin-bottom">
-            <h2 class="w3-text-grey w3-padding-16">
-              <i
-                class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"
-              ></i
-              >Work Experience
-            </h2>
-            <div class="w3-container">
-              <h5 class="w3-opacity">
-                <b>Front End Developer / w3schools.com</b>
-              </h5>
-              <h6 class="w3-text-teal">
-                <i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2015 -
-                <span class="w3-tag w3-teal w3-round">Current</span>
-              </h6>
-              <p>
-                Lorem ipsum dolor sit amet. Praesentium magnam consectetur vel
-                in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora
-                soluta ea et odio, unde doloremque repellendus iure, iste.
-              </p>
-              <hr />
-            </div>
-            <div class="w3-container">
-              <h5 class="w3-opacity"><b>Web Developer / something.com</b></h5>
-              <h6 class="w3-text-teal">
-                <i class="fa fa-calendar fa-fw w3-margin-right"></i>Mar 2012 -
-                Dec 2014
-              </h6>
-              <p>
-                Consectetur adipisicing elit. Praesentium magnam consectetur vel
-                in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora
-                soluta ea et odio, unde doloremque repellendus iure, iste.
-              </p>
-              <hr />
-            </div>
-            <div class="w3-container">
-              <h5 class="w3-opacity">
-                <b>Graphic Designer / designsomething.com</b>
-              </h5>
-              <h6 class="w3-text-teal">
-                <i class="fa fa-calendar fa-fw w3-margin-right"></i>Jun 2010 -
-                Mar 2012
-              </h6>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-              <br />
-            </div>
-          </div>
-
-          <div class="w3-container w3-card w3-white">
-            <h2 class="w3-text-grey w3-padding-16">
-              <i
-                class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"
-              ></i
-              >Education
-            </h2>
-            <div class="w3-container">
-              <h5 class="w3-opacity"><b>W3Schools.com</b></h5>
-              <h6 class="w3-text-teal">
-                <i class="fa fa-calendar fa-fw w3-margin-right"></i>Forever
-              </h6>
-              <p>Web Development! All I need to know in one place</p>
-              <hr />
-            </div>
-            <div class="w3-container">
-              <h5 class="w3-opacity"><b>London Business School</b></h5>
-              <h6 class="w3-text-teal">
-                <i class="fa fa-calendar fa-fw w3-margin-right"></i>2013 - 2015
-              </h6>
-              <p>Master Degree</p>
-              <hr />
-            </div>
-            <div class="w3-container">
-              <h5 class="w3-opacity"><b>School of Coding</b></h5>
-              <h6 class="w3-text-teal">
-                <i class="fa fa-calendar fa-fw w3-margin-right"></i>2010 - 2013
-              </h6>
-              <p>Bachelor Degree</p>
-              <br />
-            </div>
-          </div>
-
-          <!-- End Right Column -->
-        </div>
-
-        <!-- End Grid -->
+    <header role="banner">
+      <div class="container nav" aria-label="Top Navigation">
+        <a class="brand" href="#home" aria-label="Home">
+          <span>Seif Eldin Hossam Zayed</span>
+        </a>
+        <nav class="nav-links" aria-label="Primary">
+          <a href="#work">Work</a>
+          <a href="#skills">Skills</a>
+          <a href="#education">Education</a>
+          <a href="#contact">Contact</a>
+        </nav>
       </div>
+    </header>
 
-      <!-- End Page Container -->
-    </div>
+    <main id="home" class="container" role="main">
+      <section class="hero" aria-label="Introduction">
+        <div class="hero-card reveal" style="z-index:1;">
+          <p class="muted">Hello, I'm</p>
+          <div class="hero-heading">
+            <h1>Seif Eldin Hossam Mohamed Zayed</h1>
+            <div class="avatar" aria-label="Photo of Seif Eldin Zayed"><img src="pfp.jpg" alt="Photo of Seif Eldin Zayed" /></div>
+          </div>
+          <p class="lede">Engineering student at Ain Shams University passionate about robotics, AI, software development, and game design. Lead programmer on award‑winning projects showcased at major tech events. Skilled in Python, C++, OpenCV, Unreal Engine, Arduino, and Fusion 360, delivering practical, innovative systems.</p>
+          <div class="chip-row" aria-label="Highlights">
+            <span class="chip">AI/ML</span>
+            <span class="chip">Robotics</span>
+            <span class="chip">Game Development</span>
+            <span class="chip">Web Development</span>
+            <span class="chip">Mobile</span>
+            <span class="chip">Cloud</span>
+            <span class="chip">DevOps</span>
+            <span class="chip">Databases</span>
+          </div>
+          <div class="cta" style="margin-top:16px;">
+            <a class="btn magnetic" href="#work">View Projects</a>
+            <a class="btn secondary magnetic" href="#contact">Get in touch</a>
+          </div>
+        </div>
+        
+      </section>
 
-    <footer class="w3-container w3-teal w3-center w3-margin-top">
-      <p>Find me on social media.</p>
-      <i class="fa fa-facebook-official w3-hover-opacity"></i>
-      <i class="fa fa-instagram w3-hover-opacity"></i>
-      <i class="fa fa-snapchat w3-hover-opacity"></i>
-      <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-      <i class="fa fa-twitter w3-hover-opacity"></i>
-      <i class="fa fa-linkedin w3-hover-opacity"></i>
-      <p>
-        Powered by
-        <a href="https://www.w3schools.com/w3css/default.asp" target="_blank"
-          >w3.css</a
-        >
-      </p>
+      <section id="work" aria-label="Selected Work">
+        <h2 class="section-title">Work</h2>
+        <div class="grid cols-3">
+          <a class="card project-card reveal" href="https://www.facebook.com/share/v/16Ufohp2iC/" target="_blank" rel="noreferrer" aria-label="AI‑Powered Humanoid Customer Service Robot (opens external)">
+            <span class="muted">Robotics</span>
+            <h3>AI‑Powered Humanoid Customer Service Robot</h3>
+            <p class="muted">Multilingual agent with LLMs, machine vision, speech recognition, sign language, and CRM. Launched at Mactech Egypt 2024; 1st place entrepreneurship award.</p>
+            <div class="chip-row"><span class="chip">Python</span><span class="chip">OpenCV</span><span class="chip">LLMs</span><span class="chip">Speech</span></div>
+          </a>
+          <a class="card project-card reveal" href="https://mo0zart.itch.io/blades-of-babel" target="_blank" rel="noreferrer" aria-label="Blades of Babel (opens external)">
+            <span class="muted">Game</span>
+            <h3>Blades of Babel</h3>
+            <p class="muted">Soulslike 3D RPG prototype built on Unreal Engine 5. Role: Lead programmer.</p>
+            <div class="chip-row"><span class="chip">Unreal Engine 5</span><span class="chip">C++</span></div>
+          </a>
+          <a class="card project-card reveal" href="https://mo0zart.itch.io/luna" target="_blank" rel="noreferrer" aria-label="Luna: The Inner Struggle (opens external)">
+            <span class="muted">Game</span>
+            <h3>Luna: The Inner Struggle</h3>
+            <p class="muted">Simple 2D platformer made using GODOT. Role: Lead programmer.</p>
+            <div class="chip-row"><span class="chip">Godot</span><span class="chip">GDScript</span></div>
+          </a>
+          <a class="card project-card reveal" href="https://www.facebook.com/bighero6egypt/videos/768579524155275" target="_blank" rel="noreferrer" aria-label="Robotic Arm System (opens external)">
+            <span class="muted">Robotics</span>
+            <h3>Robotic Arm System</h3>
+            <p class="muted">Python IK and simulation with AI vision; Arduino for motor control. Custom 6‑DOF stepper control library.</p>
+            <div class="chip-row"><span class="chip">Python</span><span class="chip">OpenCV</span><span class="chip">Arduino</span></div>
+          </a>
+          <a class="card project-card reveal" href="https://www.youtube.com/watch?v=wlDwLiE3GmA" target="_blank" rel="noreferrer" aria-label="Automatic YouTube Music Video Creator (opens external)">
+            <span class="muted">Tooling</span>
+            <h3>Automatic YouTube Music Video Creator</h3>
+            <p class="muted">Cloud script to stitch audio and video with generated description and timestamps.</p>
+            <div class="chip-row"><span class="chip">Python</span><span class="chip">Colab</span></div>
+          </a>
+          <a class="card project-card reveal" href="https://www.youtube.com/watch?v=Xf29MjSN9bg&t=68s" target="_blank" rel="noreferrer" aria-label="AI Gate (opens external)">
+            <span class="muted">Robotics</span>
+            <h3>AI Gate</h3>
+            <p class="muted">Humanoid gatekeeper with dual cameras on Jetson Nano using TensorRT for tracking and identification.</p>
+            <div class="chip-row"><span class="chip">Python</span><span class="chip">Jetson</span><span class="chip">TensorRT</span></div>
+          </a>
+          <a class="card project-card reveal" href="https://www.facebook.com/bighero6egypt/videos/1900607940015213" target="_blank" rel="noreferrer" aria-label="Cotton Candy Robot (opens external)">
+            <span class="muted">Robotics</span>
+            <h3>Cotton Candy Robot</h3>
+            <p class="muted">Interactive robot with tablet face and dual arms, Arduino‑controlled.</p>
+            <div class="chip-row"><span class="chip">Arduino</span><span class="chip">Robotics</span></div>
+          </a>
+        </div>
+      </section>
+
+      <section id="skills" aria-label="Skills">
+        <h2 class="section-title">Skills</h2>
+        <div class="grid cols-2">
+          <div class="card reveal">
+            <h3>AI/ML</h3>
+            <div class="chip-row"><span class="chip">TensorFlow</span><span class="chip">Machine Learning</span></div>
+          </div>
+          <div class="card reveal">
+            <h3>Robotics</h3>
+            <div class="chip-row"><span class="chip">Arduino</span><span class="chip">Jetson</span><span class="chip">OpenCV</span><span class="chip">Fusion 360</span></div>
+          </div>
+          <div class="card reveal">
+            <h3>Game Development</h3>
+            <div class="chip-row"><span class="chip">Unreal Engine 5</span><span class="chip">C++</span></div>
+          </div>
+          <div class="card reveal">
+            <h3>Web Development</h3>
+            <div class="chip-row"><span class="chip">HTML5</span><span class="chip">CSS3</span><span class="chip">JavaScript</span><span class="chip">Node.js</span><span class="chip">Express</span><span class="chip">NGINX</span></div>
+          </div>
+          <div class="card reveal">
+            <h3>Mobile</h3>
+            <div class="chip-row"><span class="chip">Flutter</span><span class="chip">Android</span></div>
+          </div>
+          <div class="card reveal">
+            <h3>Cloud</h3>
+            <div class="chip-row"><span class="chip">AWS</span><span class="chip">Firebase</span></div>
+          </div>
+          <div class="card reveal">
+            <h3>DevOps</h3>
+            <div class="chip-row"><span class="chip">Docker</span><span class="chip">Git</span><span class="chip">Linux</span><span class="chip">Bash</span></div>
+          </div>
+          <div class="card reveal">
+            <h3>Databases</h3>
+            <div class="chip-row"><span class="chip">PostgreSQL</span><span class="chip">Redis</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="education" aria-label="Education">
+        <h2 class="section-title">Education</h2>
+        <div class="grid cols-2">
+          <article class="card reveal">
+            <h3>Faculty of Engineering, Ain Shams University</h3>
+            <p class="muted">09/2023 – present</p>
+            <p class="muted">Sophomore, ELCE &amp; CSYE — GPA: 3.27</p>
+          </article>
+          <article class="card reveal">
+            <h3>Horus Language School</h3>
+            <p class="muted">07/2023</p>
+            <p class="muted">High school — Thanawy Amma: 89.8%</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" aria-label="Contact">
+        <h2 class="section-title">Contact</h2>
+        <div class="grid cols-2">
+          <div class="card reveal">
+            <h3>Let’s build together</h3>
+            <p class="muted">DMs open for product collabs, platform work, or consulting.</p>
+            <div class="chip-row">
+              <a class="btn secondary magnetic" href="mailto:zayed.seifeldin@gmail.com" aria-label="Email">Email</a>
+              <a class="btn secondary magnetic" href="https://github.com/Douvakiing" target="_blank" rel="noreferrer" aria-label="GitHub">GitHub</a>
+              <a class="btn secondary magnetic" href="https://www.linkedin.com/in/seif-zayed-a32a3b242/" target="_blank" rel="noreferrer" aria-label="LinkedIn">LinkedIn</a>
+              <a id="discord-btn" class="btn secondary magnetic" href="#contact" aria-label="Discord" data-username="douvakiing">Discord</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer role="contentinfo">
+      <div class="container">
+        <small>© <span id="year"></span> Seif Eldin Hossam Mohamed Zayed. Built with HTML, CSS, JS. Deployed on GitHub Pages.</small>
+      </div>
     </footer>
+
+    <script src="main.js" defer></script>
   </body>
+</html>
 </html>
