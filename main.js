@@ -7,7 +7,7 @@
 
 // ----- Site content data (edit here) -----
 const siteData = {
-  brandName: 'Seif Eldin Hossam Zayed',
+  brandName: 'Seif Zayed',
   navLinks: [
     { label: 'Work', href: '#work' },
     { label: 'Skills', href: '#skills' },
