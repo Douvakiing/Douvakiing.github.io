@@ -73,21 +73,7 @@ header {
   transform: translateY(-2px);
 }
 
-/* Active navigation state */
-.nav-links a.active {
-  color: var(--brand);
-  position: relative;
-}
-.nav-links a.active::after {
-  content: '';
-  position: absolute;
-  bottom: -2px;
-  left: 0;
-  right: 0;
-  height: 2px;
-  background: var(--brand);
-  border-radius: 1px;
-}
+
 .theme-toggle {
   display: inline-flex; align-items: center; gap: 8px;
   padding: 8px 12px; border-radius: 999px; background: var(--panel);

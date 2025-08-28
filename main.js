@@ -233,18 +233,10 @@ function renderAll() {
   renderEducation();
   renderContact();
   // Attach scroll reveal to dynamically inserted elements
-  requestAnimationFrame(() => {
-    attachReveal();
-    setupNavigationHighlighting();
-  });
+  requestAnimationFrame(() => attachReveal());
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-  renderAll();
-  // Set initial active state for home section
-  const homeLink = document.querySelector('.nav-links a[href="#home"]');
-  if (homeLink) homeLink.classList.add('active');
-});
+document.addEventListener('DOMContentLoaded', renderAll);
 
 // Contact hover highlight moved to CSS (no availability glow)
 
@@ -288,33 +280,7 @@ function attachReveal() {
   items.forEach(el => io.observe(el));
 }
 
-// Navigation highlighting based on scroll position
-function setupNavigationHighlighting() {
-  const sections = document.querySelectorAll('section[id]');
-  const navLinks = document.querySelectorAll('.nav-links a');
-  
-  if (!sections.length || !navLinks.length) return;
-  
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        const id = entry.target.id;
-        // Remove active class from all nav links
-        navLinks.forEach(link => link.classList.remove('active'));
-        // Add active class to corresponding nav link
-        const activeLink = document.querySelector(`.nav-links a[href="#${id}"]`);
-        if (activeLink) {
-          activeLink.classList.add('active');
-        }
-      }
-    });
-  }, { 
-    rootMargin: '-20% 0px -70% 0px',
-    threshold: 0
-  });
-  
-  sections.forEach(section => observer.observe(section));
-}
+
 
 // Magnetic buttons
 (function magnetic() {
