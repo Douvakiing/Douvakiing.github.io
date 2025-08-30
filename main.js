@@ -19,7 +19,7 @@ const siteData = {
     avatarSrc: 'pfp.jpg',
     avatarAlt: 'Photo of Seif Eldin Zayed',
     lede:
-      "I'm a student at Ain Shams University who loves building things and learning by doing—from small apps to robots and game prototypes. I'm curious, hands‑on, and always excited to explore new tools, frameworks, and ideas.",
+      "Ain Shams University student with a strong focus on applied technology and hands-on development. Experienced in building a wide range of projects—from mobile applications and game prototypes to robotic systems—demonstrating a consistent drive to explore new frameworks, tools, and methodologies. Adept at rapid prototyping and problem-solving, with a practical, self-directed approach to learning and innovation.",
     highlights: ['AI/ML', 'Robotics', 'Game Development', 'Web Development', 'Mobile', 'Cloud', 'DevOps', 'Databases'],
   },
   projects: [
